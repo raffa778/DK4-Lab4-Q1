@@ -1,0 +1,10 @@
+﻿  packet_transmission.c
+  packet_duration.c
+  packet_arrival.c
+  output.c
+  main.c
+  cleanup.c
+  channel.c
+  Generating Code...
+  Dk4-Lab4-Q1.vcxproj -> D:\Documents\Git\DK4-Lab4-Q1\Debug\Dk4-Lab4-Q1.exe
+  Dk4-Lab4-Q1.vcxproj -> D:\Documents\Git\DK4-Lab4-Q1\Debug\Dk4-Lab4-Q1.pdb (Partial PDB)

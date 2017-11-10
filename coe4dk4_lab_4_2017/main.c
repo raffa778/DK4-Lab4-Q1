@@ -40,7 +40,7 @@ main(void)
 {
   /* Get the list of random number generator seeds defined in simparameters.h */
   unsigned random_seed;
-  unsigned RANDOM_SEEDS[] = {RANDOM_SEED_LIST, 0};
+  unsigned RANDOM_SEEDS[] = {RANDOM_SEED_LIST, 1311518,7777777,1315933,7654321,1010101,1111111,2222222,0};
 
   Simulation_Run_Ptr simulation_run;
   Simulation_Run_Data data;
