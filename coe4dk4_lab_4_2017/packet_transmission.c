@@ -164,7 +164,8 @@ transmission_end_event(Simulation_Run_Ptr simulation_run, void * packet)
       set_channel_state(channel, IDLE);
     }
 
-    backoff_duration = 2.0*uniform_generator() * MEAN_BACKOFF_DURATION;
+    //backoff_duration = 2.0*uniform_generator() * MEAN_BACKOFF_DURATION;
+	backoff_duration = 2.0*uniform_generator() * (2^(this_packet->collision_count));
 
     schedule_transmission_start_event(simulation_run,
 				      now + backoff_duration,
