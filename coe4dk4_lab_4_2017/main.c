@@ -70,6 +70,7 @@ main(void)
     data.number_of_collisions = 0;
     data.accumulated_delay = 0.0;
     data.random_seed = random_seed;
+	data.reserve_buffer = fifoqueue_new();
     
     /* Initialize the stations. */
     for(i=0; i<NUMBER_OF_STATIONS; i++) {
@@ -82,6 +83,7 @@ main(void)
 
     /* Create and initialize the channel. */
     data.channel = channel_new();
+	data.channel_reserved = channel_new();
 
     /* Schedule initial packet arrival. */
     schedule_packet_arrival_event(simulation_run, 

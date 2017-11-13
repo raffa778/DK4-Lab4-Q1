@@ -33,8 +33,14 @@
 void
 packet_arrival_event(Simulation_Run_Ptr, void *);
 
+void
+reserved_packet_arrival_event(Simulation_Run_Ptr, void *);
+
 long int
 schedule_packet_arrival_event(Simulation_Run_Ptr, Time);
+
+long int
+schedule_reserved_packet_arrival_event(Simulation_Run_Ptr, Time);
 
 /*******************************************************************************/
 
