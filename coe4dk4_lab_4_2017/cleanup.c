@@ -47,6 +47,7 @@ cleanup (Simulation_Run_Ptr simulation_run)
 
   /* Clean out the channel. */
   xfree(data->channel);
+  xfree(data->channel2);
 
   /* Clean up the simulation_run. */
   simulation_run_free_memory(simulation_run);
